@@ -1,8 +1,5 @@
+/* 
+This script is running on background, so it is not linked to any view
 
-function polling() {
-    console.log('polling');
-    setTimeout(polling, 1000 * 30);
-}
-
-polling();
-
+It can be used to react on some events @see https://developer.chrome.com/apps/runtime
+*/

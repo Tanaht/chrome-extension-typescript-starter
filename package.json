@@ -4,21 +4,25 @@
   "description": "chrome-extension-typescript-starter",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --config webpack/webpack.dev.js --watch",
-    "build": "webpack --config webpack/webpack.prod.js"
+    "watch": "npm run-script generate-templates && webpack --config webpack/webpack.dev.js --watch",
+    "build": "npm run-script generate-templates && webpack --config webpack/webpack.prod.js",
+    "generate-templates": "npm run-script generate-template-popup && npm run-script generate-template-options",
+    "generate-template-options": "mustache datas/dataOptions.json tpl/options.mustache > dist/options.html",
+    "generate-template-popup": "mustache datas/dataPopup.json tpl/popup.mustache > dist/popup.html"
   },
   "author": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/tanaht/chrome-extension-typescript-starter.git"
   },
   "dependencies": {
     "jquery": "~3.3.1",
-    "moment": "~2.22.0"
+    "moment": "~2.22.0",
+    "mustache": "^2.3.0"
   },
   "devDependencies": {
-    "@types/chrome": "~0.0.63",
+    "@types/chrome": "0.0.66",
     "@types/jquery": "~3.3.1",
     "ts-loader": "~4.2.0",
     "typescript": "~2.8.1",
