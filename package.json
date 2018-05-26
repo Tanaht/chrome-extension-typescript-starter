@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/tanaht/chrome-extension-typescript-starter.git"
   },
   "dependencies": {
     "jquery": "~3.3.1",
@@ -22,7 +22,7 @@
     "mustache": "^2.3.0"
   },
   "devDependencies": {
-    "@types/chrome": "~0.0.63",
+    "@types/chrome": "0.0.66",
     "@types/jquery": "~3.3.1",
     "ts-loader": "~4.2.0",
     "typescript": "~2.8.1",
