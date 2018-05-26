@@ -1,6 +1,5 @@
 # Chrome Extension TypeScript Starter
-
-[![Build Status](https://travis-ci.org/chibat/chrome-extension-typescript-starter.svg?branch=master)](https://travis-ci.org/chibat/chrome-extension-typescript-starter)
+Fork from https://github.com/chibat/chrome-extension-typescript-starter.git
 
 Chrome Extension, TypeScript and Visual Studio Code
 
@@ -18,12 +17,7 @@ Chrome Extension, TypeScript and Visual Studio Code
 * Webpack
 * Moment.js
 * jQuery
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
+* Mustache
 
 ## Project Structure
 
